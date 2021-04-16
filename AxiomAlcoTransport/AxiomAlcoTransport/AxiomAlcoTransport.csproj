@@ -1,0 +1,828 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F13FC0DE-C743-4A26-809D-27EE4F7464AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Axiom.AlcoTransport</RootNamespace>
+    <AssemblyName>AxiomAlcoTransport</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>AxiomGear.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGrid.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1.Wizard, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v17.1, Version=17.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Document\ActFixBarcode.cs" />
+    <Compile Include="Document\ActUnFixBarcode.cs" />
+    <Compile Include="Document\BCodeRests.cs" />
+    <Compile Include="Document\WaybillRepealConfirm.cs" />
+    <Compile Include="Document\WaybillRepeal.cs" />
+    <Compile Include="Engine\Amc.cs" />
+    <Compile Include="Engine\BarcodeCheck\BarCodeChecker.cs" />
+    <Compile Include="Engine\BarcodeCheck\BarcodePosition.cs" />
+    <Compile Include="Engine\BoxInfo.cs" />
+    <Compile Include="Engine\MarkType.cs" />
+    <Compile Include="Engine\StateMark.cs" />
+    <Compile Include="Dictionary\MarkTypes.cs" />
+    <Compile Include="Document\ActChargeOffShop.cs" />
+    <Compile Include="Document\ActChargeOnShop.cs" />
+    <Compile Include="Document\BaseRests.cs" />
+    <Compile Include="Document\MarkBarcode.cs" />
+    <Compile Include="Document\HistoryFormB.cs" />
+    <Compile Include="Document\InventoryBRegInfo.cs" />
+    <Compile Include="Document\WaybillTicket.cs" />
+    <Compile Include="Document\NotAnswer.cs" />
+    <Compile Include="Document\Movement.cs" />
+    <Compile Include="Document\ActChargeOff.cs" />
+    <Compile Include="Document\ARests.cs" />
+    <Compile Include="Document\ShopRests.cs" />
+    <Compile Include="Document\TransferFromShop.cs" />
+    <Compile Include="Document\TransferToShop.cs" />
+    <Compile Include="Document\ActChargeOn.cs" />
+    <Compile Include="Document\AMovement.cs" />
+    <Compile Include="Engine\Documents.Constructors.cs" />
+    <Compile Include="Engine\Documents.Events.cs" />
+    <Compile Include="Engine\Documents.Background.cs" />
+    <Compile Include="Engine\Documents.Protected.Members.cs" />
+    <Compile Include="Engine\Documents.Protected.Target.cs" />
+    <Compile Include="Engine\Documents.Public.cs" />
+    <Compile Include="Engine\MovePosition.cs" />
+    <Compile Include="Engine\OutPosition.cs" />
+    <Compile Include="Engine\DocumentReceivedEventArgs.cs" />
+    <Compile Include="Engine\RestsPosition.cs" />
+    <Compile Include="Enums\ProductionType.cs" />
+    <Compile Include="Enums\RestsType.cs" />
+    <Compile Include="Enums\MovementType.cs" />
+    <Compile Include="Enums\OnlineEventStatus.cs" />
+    <Compile Include="Enums\FormsFormat.cs" />
+    <Compile Include="Enums\MovementStatus.cs" />
+    <Compile Include="Enums\WaybillRepealStatus.cs" />
+    <Compile Include="Enums\WaybillActStatus.cs" />
+    <Compile Include="Enums\OutWaybillStatus.cs" />
+    <Compile Include="Enums\InWaybillStatus.cs" />
+    <Compile Include="Document\ADocument.cs" />
+    <Compile Include="Document\FormB.cs" />
+    <Compile Include="Document\FormBRegInfo.cs" />
+    <Compile Include="Engine\OnlineEvent.cs" />
+    <Compile Include="Document\OutWaybill.cs" />
+    <Compile Include="Document\InWaybill.cs" />
+    <Compile Include="Document\FormA.cs" />
+    <Compile Include="Document\WaybillAct.cs" />
+    <Compile Include="Document\Rests.cs" />
+    <Compile Include="Engine\Position.cs" />
+    <Compile Include="Engine\Documents.Protected.Shared.cs" />
+    <Compile Include="Document\AWaybill.cs" />
+    <Compile Include="Document\Production.cs" />
+    <Compile Include="Document\Ticket.cs" />
+    <Compile Include="Document\Partner.cs" />
+    <Compile Include="Engine\Pair.cs" />
+    <Compile Include="Language\Language.cs" />
+    <Compile Include="Engine\Locker.cs" />
+    <Compile Include="Engine\TreeData.cs" />
+    <Compile Include="Engine\Addresses.cs" />
+    <Compile Include="Engine\XmlPrefix.cs" />
+    <Compile Include="Engine\ThreadedBindingList.cs" />
+    <Compile Include="Engine\FileStorage.cs" />
+    <Compile Include="UI\About\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\About\AboutForm.designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\ExportFormat.cs" />
+    <Compile Include="UI\FormA\FormAForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormA\FormAForm.Designer.cs">
+      <DependentUpon>FormAForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormA\MainForm.FormA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormB\FormBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FormB\FormBForm.Designer.cs">
+      <DependentUpon>FormBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FormB\MainForm.FormB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FullTextSearch\FullTextSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FullTextSearch\FullTextSearchForm.Designer.cs">
+      <DependentUpon>FullTextSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Garbage\GarbageForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Garbage\GarbageForm.Designer.cs">
+      <DependentUpon>GarbageForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Garbage\MainForm.Garbage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InWaybill\InWaybillViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InWaybill\InWaybillViewForm.Designer.cs">
+      <DependentUpon>InWaybillViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MarkBarcode\MarcBarcodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MarkBarcode\MarcBarcodeForm.Designer.cs">
+      <DependentUpon>MarcBarcodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MarkBarcode\MainForm.MarkBarcode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\HistoryFormB\HistoryFormBForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\HistoryFormB\HistoryFormBForm.Designer.cs">
+      <DependentUpon>HistoryFormBForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HistoryFormB\MainForm.HistoryFormB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Home\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Home\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Home\MainForm.Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MarkBarcode\MarkEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MarkBarcode\MarkEditorForm.Designer.cs">
+      <DependentUpon>MarkEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MarkBarcode\MarksRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MarkBarcode\MarksRequestForm.Designer.cs">
+      <DependentUpon>MarksRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movement\ActFixBarcodeEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\ActFixBarcodeEditorForm.Designer.cs">
+      <DependentUpon>ActFixBarcodeEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOffEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOffEditorForm.Designer.cs">
+      <DependentUpon>ActChargeOffEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOffShopEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOffShopEditorForm.Designer.cs">
+      <DependentUpon>ActChargeOffShopEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOnHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOnHelpForm.Designer.cs">
+      <DependentUpon>ActChargeOnHelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOnEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOnEditorForm.Designer.cs">
+      <DependentUpon>ActChargeOnEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOnShopEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOnShopEditorForm.Designer.cs">
+      <DependentUpon>ActChargeOnShopEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movement\MainForm.Movement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\MovementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\MovementForm.Designer.cs">
+      <DependentUpon>MovementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movement\MovementForm[T].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOnDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\ActChargeOnDetailForm.Designer.cs">
+      <DependentUpon>ActChargeOnDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movement\TransferFromShopEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\TransferFromShopEditorForm.Designer.cs">
+      <DependentUpon>TransferFromShopEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Movement\TransferToShopEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Movement\TransferToShopEditorForm.Designer.cs">
+      <DependentUpon>TransferToShopEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NotAnswer\MainForm.NotAnswer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NotAnswer\NotAnswerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NotAnswer\NotAnswerForm.Designer.cs">
+      <DependentUpon>NotAnswerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Position\FindABForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Position\FindABForm.Designer.cs">
+      <DependentUpon>FindABForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Position\PositionViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Position\PositionViewForm.Designer.cs">
+      <DependentUpon>PositionViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OnlineEvent\MainForm.OnlineEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OnlineEvent\OnlineEventForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OnlineEvent\OnlineEventForm.Designer.cs">
+      <DependentUpon>OnlineEventForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OutWaybill\MainForm.OutWaybill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OutWaybill\OutWaybillEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OutWaybill\OutWaybillEditorForm.Designer.cs">
+      <DependentUpon>OutWaybillEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\OutWaybill\OutWaybillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OutWaybill\OutWaybillForm.Designer.cs">
+      <DependentUpon>OutWaybillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Request\PDF417RequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Request\PDF417RequestForm.Designer.cs">
+      <DependentUpon>PDF417RequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Request\InnRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Request\InnRequestForm.Designer.cs">
+      <DependentUpon>InnRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InWaybill\ActDifferenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InWaybill\ActDifferenceForm.Designer.cs">
+      <DependentUpon>ActDifferenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InWaybill\ActSingleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InWaybill\ActSingleForm.Designer.cs">
+      <DependentUpon>ActSingleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Enums\ActType.cs" />
+    <Compile Include="UI\InWaybill\InWaybillForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\InWaybill\InWaybillForm.Designer.cs">
+      <DependentUpon>InWaybillForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\InWaybill\MainForm.InWaybill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Licence\LicenceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Licence\LicenceForm.Designer.cs">
+      <DependentUpon>LicenceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\NotFound\NotFoundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\NotFound\NotFoundForm.Designer.cs">
+      <DependentUpon>NotFoundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Main\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Main\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Main\MainForm.Static.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Options\OptionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Options\OptionsForm.Designer.cs">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Partner\MainForm.Partner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Partner\PartnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Partner\PartnerForm.Designer.cs">
+      <DependentUpon>PartnerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Production\MainForm.Production.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Production\ProductionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Production\ProductionForm.Designer.cs">
+      <DependentUpon>ProductionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\Request\PositionRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Request\PositionRequestForm.Designer.cs">
+      <DependentUpon>PositionRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Request\RegIdRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Request\RegIdRequestForm.Designer.cs">
+      <DependentUpon>RegIdRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Request\WaybillRegIdRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Request\WaybillRegIdRequestForm.Designer.cs">
+      <DependentUpon>WaybillRegIdRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Request\WaybillRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Request\WaybillRequestForm.Designer.cs">
+      <DependentUpon>WaybillRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Rests\MainForm.Rests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Rests\RestsForm[T].cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Rests\RestsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Rests\RestsForm.Designer.cs">
+      <DependentUpon>RestsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Engine\SplashAccessor.cs" />
+    <Compile Include="UI\Rests\RestsPositionViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Rests\RestsPositionViewForm.Designer.cs">
+      <DependentUpon>RestsPositionViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Splash\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Splash\SplashForm.Designer.cs">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Ticket\MainForm.Ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Ticket\TicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Ticket\TicketForm.Designer.cs">
+      <DependentUpon>TicketForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WaybillAct\MainForm.WaybillAct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WaybillAct\WaybillActForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WaybillAct\WaybillActForm.Designer.cs">
+      <DependentUpon>WaybillActForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WaybillAct\WaybillActSingleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WaybillAct\WaybillActSingleForm.Designer.cs">
+      <DependentUpon>WaybillActSingleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WaybillRepeal\MainForm.WaybillRepeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WaybillRepeal\WaybillRepealForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WaybillRepeal\WaybillRepealForm.Designer.cs">
+      <DependentUpon>WaybillRepealForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WaybillRepeal\WaybillRepealSingleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WaybillRepeal\WaybillRepealSingleForm.Designer.cs">
+      <DependentUpon>WaybillRepealSingleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\WaybillTicket\MainForm.WaybillTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WaybillTicket\WaybillTicketForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\WaybillTicket\WaybillTicketForm.Designer.cs">
+      <DependentUpon>WaybillTicketForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="UI\About\AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormA\FormAForm.resx">
+      <DependentUpon>FormAForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FormB\FormBForm.resx">
+      <DependentUpon>FormBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FullTextSearch\FullTextSearchForm.resx">
+      <DependentUpon>FullTextSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Garbage\GarbageForm.resx">
+      <DependentUpon>GarbageForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InWaybill\InWaybillViewForm.resx">
+      <DependentUpon>InWaybillViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MarkBarcode\MarcBarcodeForm.resx">
+      <DependentUpon>MarcBarcodeForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\HistoryFormB\HistoryFormBForm.resx">
+      <DependentUpon>HistoryFormBForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Home\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MarkBarcode\MarkEditorForm.resx">
+      <DependentUpon>MarkEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MarkBarcode\MarksRequestForm.resx">
+      <DependentUpon>MarksRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Movement\ActFixBarcodeEditorForm.resx">
+      <DependentUpon>ActFixBarcodeEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Movement\ActChargeOffEditorForm.resx">
+      <DependentUpon>ActChargeOffEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Movement\ActChargeOffShopEditorForm.resx">
+      <DependentUpon>ActChargeOffShopEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Movement\ActChargeOnHelpForm.resx">
+      <DependentUpon>ActChargeOnHelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Movement\ActChargeOnEditorForm.resx">
+      <DependentUpon>ActChargeOnEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Movement\ActChargeOnShopEditorForm.resx">
+      <DependentUpon>ActChargeOnShopEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Movement\MovementForm.resx">
+      <DependentUpon>MovementForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Movement\ActChargeOnDetailForm.resx">
+      <DependentUpon>ActChargeOnDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Movement\TransferFromShopEditorForm.resx">
+      <DependentUpon>TransferFromShopEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Movement\TransferToShopEditorForm.resx">
+      <DependentUpon>TransferToShopEditorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NotAnswer\NotAnswerForm.resx">
+      <DependentUpon>NotAnswerForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Position\FindABForm.resx">
+      <DependentUpon>FindABForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Position\PositionViewForm.resx">
+      <DependentUpon>PositionViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OnlineEvent\OnlineEventForm.resx">
+      <DependentUpon>OnlineEventForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OutWaybill\OutWaybillEditorForm.resx">
+      <DependentUpon>OutWaybillEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OutWaybill\OutWaybillForm.resx">
+      <DependentUpon>OutWaybillForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Request\PDF417RequestForm.resx">
+      <DependentUpon>PDF417RequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Request\InnRequestForm.resx">
+      <DependentUpon>InnRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InWaybill\ActDifferenceForm.resx">
+      <DependentUpon>ActDifferenceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InWaybill\ActSingleForm.resx">
+      <DependentUpon>ActSingleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\InWaybill\InWaybillForm.resx">
+      <DependentUpon>InWaybillForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Licence\LicenceForm.resx">
+      <DependentUpon>LicenceForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\NotFound\NotFoundForm.resx">
+      <DependentUpon>NotFoundForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Main\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Options\OptionsForm.resx">
+      <DependentUpon>OptionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Partner\PartnerForm.resx">
+      <DependentUpon>PartnerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Production\ProductionForm.resx">
+      <DependentUpon>ProductionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\Request\PositionRequestForm.resx">
+      <DependentUpon>PositionRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Request\RegIdRequestForm.resx">
+      <DependentUpon>RegIdRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Request\WaybillRegIdRequestForm.resx">
+      <DependentUpon>WaybillRegIdRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Request\WaybillRequestForm.resx">
+      <DependentUpon>WaybillRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Rests\RestsForm.resx">
+      <DependentUpon>RestsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Rests\RestsPositionViewForm.resx">
+      <DependentUpon>RestsPositionViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Splash\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Ticket\TicketForm.resx">
+      <DependentUpon>TicketForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WaybillAct\WaybillActForm.resx">
+      <DependentUpon>WaybillActForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WaybillAct\WaybillActSingleForm.resx">
+      <DependentUpon>WaybillActSingleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WaybillRepeal\WaybillRepealForm.resx">
+      <DependentUpon>WaybillRepealForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WaybillRepeal\WaybillRepealSingleForm.resx">
+      <DependentUpon>WaybillRepealSingleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\WaybillTicket\WaybillTicketForm.resx">
+      <DependentUpon>WaybillTicketForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Configuration\configuration.cfg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Licence\licence.lic">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AxiomAlcoTransportConfiguration\AxiomAlcoTransportConfiguration.csproj">
+      <Project>{321b8717-af61-407f-a283-4046a363d458}</Project>
+      <Name>AxiomAlcoTransportConfiguration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Auxiliaries\AxiomAuxiliary\AxiomAuxiliary.csproj">
+      <Project>{9a83d924-8c82-430d-ab7a-8c1831ffb5d5}</Project>
+      <Name>AxiomAuxiliary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AxiomAlcoTransportWatchtower\AxiomAlcoTransportWatchtower.csproj">
+      <Project>{62887fea-2ea2-4d37-bfba-028d0a3bb56c}</Project>
+      <Name>AxiomAlcoTransportWatchtower</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AxiomGear.ico" />
+    <Content Include="Dictionary\MarkTypes.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Language\language.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Utilities\Rar.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

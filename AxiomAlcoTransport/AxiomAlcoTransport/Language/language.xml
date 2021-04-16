@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<dictionaries>
+    <language>
+        <word original="ActDate" translate="Дата акта"/>
+        <word original="ActChargeOff" translate="Акт списания товара с баланса склада организации"/>
+        <word original="ActChargeOffShop" translate="Акт списания товара с баланса торгового зала"/>
+        <word original="ActChargeOn" translate="Акт постановки товара на баланс на склад организации"/>
+        <word original="ActChargeOn_v2" translate="Акт постановки товара на баланс на склад организации (документ версии 2)"/>
+        <word original="ActChargeOnShop" translate="Акт постановки товара на баланс в торговом зале"/>
+        <word original="ActChargeOnShop_v2" translate="Акт постановки товара на баланс в торговом зале (документ версии 2)"/>
+        <word original="ActInventoryInformBReg" translate="Акт подтверждения постановки товара на баланс на складе организации (приложение Б)"/>
+        <word original="ActInventoryInformF2Reg" translate="Акт подтверждения постановки товара на баланс на складе организации (приложение №2)"/>
+        <word original="ACTNUMBER" translate="Номер акта"/>
+        <word original="ACORegId" translate="Регистрационный идентификатор акта постановки на баланс на склад организации"/>
+        <word original="ActRegId" translate="Регистрационный идентификатор акта"/>
+        <word original="ActWriteOff" translate="Акт списания товара со склада организации"/>
+        <word original="ActWriteOffShop" translate="Акт списания товара из торгового зала"/>
+        <word original="ActWriteOffShop_v2" translate="Акт списания товара из торгового зала (документ версии 2)"/>
+        <word original="Address" translate="Адрес"/>
+        <word original="AddressList" translate="Список адресов"/>
+        <word original="AlcCode" translate="Идентификатор алкогольной продукции в системе ФСРАР"/>
+        <word original="AlcoCode" translate="Идентификатор алкогольной продукции в системе ФСРАР"/>
+        <word original="AlcVolume" translate="Крепость"/>
+        <word original="AlcoVolume" translate="Крепость"/>
+        <word original="amc" translate="Двумерный штрих-код PDF-417"/>
+        <word original="amclist" translate="Список марок"/>
+        <word original="Area" translate="Район"/>
+        <word original="AWORegId" translate="Регистрационный идентификатор акта списания с баланса со склада организации"/>
+        <word original="Base" translate="Основание отправления"/>
+        <word original="Barcode" translate="Двумерный штрих-код PDF-417"/>
+        <word original="BottlingDate" translate="Дата розлива продукции"/>
+        <word original="BRegId" translate="Идентификатор записи предыдущей отгрузки (приложение Б)"/>
+        <word original="boxnumber" translate="Код агрегатора акцизных марок"/>
+        <word original="boxpos" translate="Агрегатор акцизных марок"/>
+        <word original="Building" translate="Строение"/>
+        <word original="Capacity" translate="Ёмкость"/>
+        <word original="City" translate="Город"/>
+        <word original="Client" translate="Организация-партнёр"/>
+        <word original="ClientId" translate="Идентификатор организации"/>
+        <word original="ClientRegId" translate="Идентификатор организации в системе ФСРАР"/>
+        <word original="Comments" translate="Комментарий"/>
+        <word original="Conclusion" translate="Результат фиксации"/>
+        <word original="ConclusionDate" translate="Дата фиксации"/>
+        <word original="ConfirmDate" translate="Дата ответа на запрос распроведения"/>
+        <word original="ConfirmNumber" translate="Номер ответа на запрос распроведения"/>
+        <word original="ConfirmRepealWB" translate="Подтверждение или отказ на запрос распроведения накладных"/>
+        <word original="ConfirmTicket" translate="Квитанция подтверждения или отказа"/>
+        <word original="Consignee" translate="Получатель"/>
+        <word original="Content" translate="Состав"/>
+        <word original="Country" translate="Страна"/>
+        <word original="Date" translate="Дата"/>
+        <word original="Description" translate="Описание"/>
+        <word original="DocHash" translate="Хэш документа"/>
+        <word original="DocId" translate="Идентификатор документа"/>
+        <word original="DocType" translate="Тип документа"/>
+        <word original="Document" translate="Документ"/>
+        <word original="Documents" translate="Состав документа"/>
+        <word original="EGAISDate" translate="Дата подтверждения о фиксации в ЕГАИС"/>
+        <word original="EGAISFixDate" translate="Дата фиксации накладной (отгрузки) в ЕГАИС"/>
+        <word original="EGAISFixNumber" translate="Номер фиксации накладной (отгрузки) в ЕГАИС"/>
+        <word original="EGAISNumber" translate="Номер подтверждения о фиксации в ЕГАИС"/>
+        <word original="F2RegId" translate="Идентификатор записи предыдущей отгрузки (приложение №2)"/>
+        <word original="FSRAR_ID" translate="Идентификатор организации в системе ФСРАР"/>
+        <word original="FL" translate="Индивидуальный предприниматель"/>
+        <word original="FO" translate="Иностранная организация (за исключением Таможенного союза)"/>
+        <word original="FullName" translate="Полное наименование"/>
+        <word original="Header" translate="Заголовок"/>
+        <word original="HistoryFormB" translate="История движения товара по справке 'Б'"/>
+        <word original="HistFormBDate" translate="Дата получения истории движения товара по справке 'Б'"/>
+        <word original="HistForm2Date" translate="Дата получения истории движения товара по справке №2 ('Б')"/>
+        <word original="HistoryB" translate="История движения товара по справке 'Б'"/>
+        <word original="HistoryF2" translate="История движения товара по справке №2 ('Б')"/>
+        <word original="House" translate="Дом"/>
+        <word original="Identity" translate="Идентификатор"/>
+        <word original="IdentityPosition" translate="Идентификатор позиции"/>
+        <word original="Importer" translate="Импортёр"/>
+        <word original="Index" translate="Индекс"/>
+        <word original="InformA" translate="Приложение А"/>
+        <word original="InformAB" translate="Список справок А и Б"/>
+        <word original="InformABReg" translate="Приложение А и Б"/>
+        <word original="InformARegId" translate="Идентификатор документа регистрации движения (приложение А)"/>
+        <word original="InformB" translate="Приложение Б"/>
+        <word original="InformBItem" translate="Документ регистрации движения (приложение Б)"/>
+        <word original="InformBRegId" translate="Идентификатор документа регистрации движения (приложение Б)"/>
+        <word original="InformF1" translate="Приложение №1 ('А')"/>
+        <word original="FARegId" translate="Приложение №1 ('А')"/>
+        <word original="InformF1F2" translate="Приложения №1 и №2 ('А' и 'Б')"/>
+        <word original="InformF1F2Reg" translate="Приложения №1 и №2 ('А' и 'Б')"/>
+        <word original="InformF1RegId" translate="Приложение №1"/>
+        <word original="Inform2RegId" translate="Приложение №2"/>
+        <word original="InformF2RegId" translate="Приложение №2"/>
+        <word original="InformF2" translate="Приложение №2"/>
+        <word original="InformF2Item" translate="Приложение №2 (состав)"/>
+        <word original="INN" translate="ИНН"/>
+        <word original="IsAccept" translate="Признак подтверждения или отказа"/>
+        <word original="IsConfirm" translate="Признак подтверждения или отказа"/>
+        <word original="IsLicense" translate="Наличие действующей лицензии"/>
+        <word original="KPP" translate="КПП"/>
+        <word original="Liter" translate="Литер"/>
+        <word original="Mark" translate="Марка"/>
+        <word original="MarkCode" translate="Двумерный штрих-код PDF-417"/>
+        <word original="MarkCodeInfo" translate="Список двумерных штрих-кодов PDF-417"/>
+        <word original="MarkInfo" translate="Информация по маркам"/>
+        <word original="Marks" translate="Список марок"/>
+        <word original="NoAnswer" translate="Необработанный документ"/>
+        <word original="NotAnswer" translate="Список необработанных документов"/>
+        <word original="Note" translate="Комментарий к акту"/>
+        <word original="Number" translate="Номер"/>
+        <word original="Operation" translate="Операция"/>
+        <word original="OperationB" translate="Операция по справке 'Б'"/>
+        <word original="OperationF2" translate="Операция по справке №2 ('Б')"/>
+        <word original="OperationComment" translate="Комментарий"/>
+        <word original="OperationDate" translate="Дата операции"/>
+        <word original="OperationName" translate="Наименование операции"/>
+        <word original="OperationResult" translate="Результат операции"/>
+        <word original="OperDate" translate="Дата операции"/>
+        <word original="OrgInfoV2" translate="Информация об организации (версии 'v2')"/>
+        <word original="OriginalDocDate" translate="Дата документа о производстве/импорте продукции"/>
+        <word original="OriginalDocNumber" translate="Номер документа о производстве/импорте продукции"/>
+        <word original="Owner" translate="Владелец"/>
+        <word original="Pack_ID" translate="Упаковка"/>
+        <word original="Party" translate="Партия"/>
+        <word original="Place" translate="Местоположение"/>
+        <word original="Position" translate="Позиция"/>
+        <word original="Price" translate="Цена"/>
+        <word original="Producer" translate="Производитель"/>
+        <word original="Product" translate="Продукт"/>
+        <word original="ProductCode" translate="Идентификатор алкогольной продукции в системе ФСРАР"/>
+        <word original="ProductInfo" translate="Информация о продукте"/>
+        <word original="Products" translate="Продукты"/>
+        <word original="ProductVCode" translate="Код вида продукции"/>
+        <word original="Quantity" translate="Количество"/>
+        <word original="QueryNumber" translate="Номер запроса"/>
+        <word original="QueryBarcode" translate="Запрос штрих-кодов"/>
+        <word original="Rank" translate="Серия"/>
+        <word original="RealQuantity" translate="Реальное количество"/>
+        <word original="RegId" translate="Регистрационный идентификатор ЕГАИС"/>
+        <word original="RegionCode" translate="Код региона"/>
+        <word original="ReplyBarcode" translate="Ответ на запрос штрих-кодов"/>
+        <word original="ReplyDate" translate="Дата ответа"/>
+        <word original="ReplyForm1" translate="Справка формы №1 ('А')"/>
+        <word original="ReplyForm2" translate="Справка формы №2 ('Б')"/>
+        <word original="ReplyFormA" translate="Справка формы 'А'"/>
+        <word original="ReplyFormB" translate="Справка формы 'Б'"/>
+        <word original="ReplyHistFormB" translate="Ответ на запрос о движении по справке 'Б'"/>
+        <word original="ReplyHistForm2" translate="Ответ на запрос о движении по справке №2 ('Б')"/>
+        <word original="ReplyNoAnswerTTN" translate="Необработанные товарно-транспортные накладные"/>
+        <word original="ReplyRestBCode" translate="Остатки на складе в разрезе штрихкодов"/>
+        <word original="ReplyRests" translate="Остатки на складе организации"/>
+        <word original="ReplyRests_v2" translate="Остатки на складе организации (документ версии 2)"/>
+        <word original="ReplyRestsShop_v2" translate="Остатки в торговом зале (документ версии 2)"/>
+        <word original="RequestDate" translate="Дата запроса"/>
+        <word original="RequestNumber" translate="Номер запроса"/>
+        <word original="RequestRepealACO" translate="Запрос на отмену проведения акта постановки на баланс на склад организации"/>
+        <word original="RequestRepealAWO" translate="Запрос на отмену проведения акта списания с баланса со склада организации"/>
+        <word original="RequestRepealWB" translate="Запрос на отмену проведения входящей товарно-транспортной накладной"/>
+        <word original="RestsDate" translate="Дата, на которую указаны остатки"/>
+        <word original="Result" translate="Результат"/>
+        <word original="Shipper" translate="Отправитель"/>
+        <word original="ShippingDate" translate="Дата отгрузки"/>
+        <word original="ShopPosition" translate="Позиция в остатках в торговом зале"/>
+        <word original="ShortName" translate="Короткое наименование"/>
+        <word original="sign" translate="Цифровая подпись"/>
+        <word original="State" translate="Состояние"/>
+        <word original="StockPosition" translate="Позиция в остатках на складе организации"/>
+        <word original="Street" translate="Улица"/>
+        <word original="Supplier" translate="Поставщик"/>
+        <word original="Ticket" translate="Квитанция"/>
+        <word original="TicketDate" translate="Дата квитанции"/>
+        <word original="TicketNumber" translate="Номер квитанции"/>
+        <word original="TRAN_CAR" translate="Автомобиль"/>
+        <word original="TRAN_COMPANY" translate="Компания-перевозчик"/>
+        <word original="TRAN_CUSTOMER" translate="Заказчик"/>
+        <word original="TRAN_DRIVER" translate="Водитель" />
+        <word original="TRAN_FORWARDER" translate="Экспедитор"/>
+        <word original="TRAN_LOADPOINT" translate="Место погрузки"/>
+        <word original="TRAN_REDIRECT" translate="Перенаправление"/>
+        <word original="TRAN_TRAILER" translate="Прицеп"/>
+        <word original="TRAN_TYPE" translate="Тип перевозки"/>
+        <word original="TRAN_UNLOADPOINT" translate="Место разгрузки"/>
+        <word original="TransferDate" translate="Дата акта движения товара"/>
+        <word original="TransferNumber" translate="Номер акта движения товара"/>
+        <word original="TransferToShop" translate="Передача продукции в торговый зал"/>
+        <word original="TransferFromShop" translate="Возврат продукции из торгового зала"/>
+        <word original="Transport" translate="Транспорт"/>
+        <word original="TransportId" translate="Транспортный идентификатор"/>
+        <word original="TS" translate="Иностранная организация (Таможенный союз)"/>
+        <word original="TTNDate" translate="Дата товарно-транспортной накладной"/>
+        <word original="TTNInformBReg" translate="Документ регистрации движения (приложение Б)"/>
+        <word original="TTNInformF2Reg" translate="Документ регистрации движения (приложение №2)"/>
+        <word original="TTNList" translate="Список товарно-транспортных накладных"/>
+        <word original="TTNNumber" translate="Номер товарно-транспортной накладной"/>
+        <word original="Type" translate="Тип"/>
+        <word original="TypeChargeOn" translate="Основание для составления"/>
+        <word original="TypeWriteOff" translate="Основание для составления"/>
+        <word original="UL" translate="Юридическое лицо"/>
+        <word original="UnitType" translate="Тип продукции"/>
+        <word original="url" translate="Указатель ресурса (например, web-адрес)"/>
+        <word original="ver" translate="Версия"/>
+        <word original="VersionWB" translate="Версия используемой документации ЕГАИС"/>
+        <word original="WayBill" translate="Товарно-транспортная накладная"/>
+        <word original="WayBill_v2" translate="Товарно-транспортная накладная"/>
+        <word original="WayBill_v3" translate="Товарно-транспортная накладная"/>
+        <word original="WayBillAct" translate="Акт по накладной"/>
+        <word original="WayBillAct_v2" translate="Акт по накладной (документ версии 2)"/>
+        <word original="WayBillAct_v3" translate="Акт по накладной (документ версии 3)"/>
+        <word original="WBDate" translate="Дата накладной"/>
+        <word original="WBNUMBER" translate="Номер накладной"/>
+        <word original="WBRegId" translate="Идентификатор ТТН (по документу регистрации движения)"/>
+        <word original="xml" translate="Служебный заголовок XML-документа"/>
+        <word original="#comment" translate="Комментарий"/>
+    </language>
+    <reference>
+        <word original="Accepted" translate="Акцептование"/>
+        <word original="ActChargeOff" translate="Акт списания товара с баланса склада организации"/>
+        <word original="ActChargeOff_2" translate="Акт списания товара с баланса склада организации (документ версии 2)"/>
+        <word original="ActChargeOffShop" translate="Акт списания товара с баланса торгового зала"/>
+        <word original="ActChargeOn" translate="Акт постановки товара на баланс на склад организации"/>
+        <word original="ActChargeOn_v2" translate="Акт постановки товара на баланс на склад организации (документ версии 2)"/>
+        <word original="ActChargeOnShop" translate="Акт постановки товара на баланс в торговом зале"/>
+        <word original="ActChargeOnShop_v2" translate="Акт постановки товара на баланс в торговом зале (документ версии 2)"/>
+        <word original="Active" translate="Действующая"/>
+        <word original="ActWriteOff" translate="Акт списания товара со склада организации"/>
+        <word original="ActWriteOff_v2" translate="Акт списания товара со склада организации (документ версии 2)"/>
+        <word original="ActWriteOffShop" translate="Акт списания товара из торгового зала"/>
+        <word original="ActWriteOffShop_v2" translate="Акт списания товара из торгового зала (документ версии 2)"/>
+        <word original="ADocument" translate="Документ (общий)"/>
+        <word original="Confirm" translate="Подтверждение"/>
+        <word original="ConfirmRepealWB" translate="Подтверждение или отказ на запрос распроведения накладных"/>
+        <word original="Deleted" translate="Удалённая"/>
+        <word original="Error" translate="Ошибка"/>
+        <word original="FormA" translate="Форма 'А'"/>
+        <word original="FormB" translate="Форма 'Б'"/>
+        <word original="FormBRegInfo" translate="Документ регистрации движения (форма 'Б')"/>
+        <word original="HistoryFormB" translate="История движения товара по справке 'Б'"/>
+        <word original="InfoVersionTTN" translate="Информация об используемой версии формата документов"/>
+        <word original="InventoryPartial" translate="Постановка продукции на баланс"/>
+        <word original="InWaybill" translate="Входящая накладная"/>
+        <word original="OutWaybill" translate="Исходящая накладная"/>
+        <word original="NotAnswer" translate="Список необработанных документов"/>
+        <word original="Packed" translate="Упакованная продукция"/>
+        <word original="Partner" translate="Организация-партнёр"/>
+        <word original="PreparedToConfirm" translate="Подготовка к подтверждению"/>
+        <word original="Production" translate="Алкогольная продукция"/>
+        <word original="QueryAP" translate="Запрос на получение справочника алкогольной продукции"/>
+        <word original="QueryBarcode" translate="Запрос на получение списка штрих-кодов"/>
+        <word original="QueryFormA" translate="Запрос на получение справки по форме 'А'"/>
+        <word original="QueryFormB" translate="Запрос на получение справки по форме 'Б'"/>
+        <word original="QueryHistoryFormB" translate="Запрос на получение истории движения товара по форме №2 ('Б')"/>
+        <word original="QueryNATTN" translate="Запрос на получение списка необработанных накладных"/>
+        <word original="QueryResendDoc" translate="Запрос на повторное получение документа"/>
+        <word original="Rejected" translate="Отказ"/>
+        <word original="RequestRepealACO" translate="Запрос на отмену проведения акта постановки на баланс на склад организации"/>
+        <word original="RequestRepealAWO" translate="Запрос на отмену проведения акта списания с баланса со склада организации"/>
+        <word original="RequestRepealWB" translate="Запрос на отмену проведения входящей товарно-транспортной накладной"/>
+        <word original="Rests" translate="Остатки на складе организации"/>
+        <word original="ShopRests" translate="Остатки в торговом зале"/>
+        <word original="Ticket" translate="Квитанция-ответ сервера"/>
+        <word original="TransferToShop" translate="Передача продукции в торговый зал"/>
+        <word original="TransferFromShop" translate="Возврат продукции из торгового зала"/>
+        <word original="UnConfirm" translate="Распроведение"/>
+        <word original="Unpacked" translate="Неупакованная продукция"/>
+        <word original="version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;" translate="Версия=&quot;1.0&quot; Кодировка=&quot;UTF-8&quot;"/>
+        <word original="Waybill" translate="Товарно-транспортная накладная"/>
+        <word original="WaybillAct" translate="Акт по накладной"/>
+        <word original="WaybillAct_v2" translate="Акт по накладной (документ версии 2)"/>
+        <word original="WaybillAct_v3" translate="Акт по накладной (документ версии 3)"/>
+        <word original="WaybillTicket" translate="Квитанция по накладной"/>
+        <word original="WayBill_v1" translate="Версия 'v1'"/>
+        <word original="WayBill_v2" translate="Версия 'v2'"/>
+        <word original="WayBill_v3" translate="Версия 'v3'"/>
+        <word original="WBInvoiceFromMe" translate="Расход"/>
+        <word original="WBInvoiceToMe" translate="Приход"/>
+        <word original="WBReturnFromMe" translate="Возврат от меня"/>
+        <word original="WBReturnToMe" translate="Возврат мне"/>
+    </reference>
+</dictionaries>

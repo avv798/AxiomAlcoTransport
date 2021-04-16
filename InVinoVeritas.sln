@@ -1,0 +1,111 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AxiomAlcoTransport", "AxiomAlcoTransport", "{A98BACA1-F31E-4ACA-BF0F-847B22BCED48}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auxiliaries", "Auxiliaries", "{49F21A6A-8B52-43A0-B5A4-8AAA9EB908ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Prototypes", "Prototypes", "{98EED118-516D-4735-81A6-701FEC7E867F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B0514D67-13AF-4F04-8058-A1380361CE02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Databases", "Databases", "{E6A72359-78B6-4881-9348-DC1FDD89806D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxiomAuxiliary", "Auxiliaries\AxiomAuxiliary\AxiomAuxiliary.csproj", "{9A83D924-8C82-430D-AB7A-8C1831FFB5D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxiomAlcoTransportConfiguration", "AxiomAlcoTransport\AxiomAlcoTransportConfiguration\AxiomAlcoTransportConfiguration.csproj", "{321B8717-AF61-407F-A283-4046A363D458}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxiomAlcoTransport", "AxiomAlcoTransport\AxiomAlcoTransport\AxiomAlcoTransport.csproj", "{F13FC0DE-C743-4A26-809D-27EE4F7464AB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{D9A6BC2C-1EC7-4EF5-983A-1A8258BDAB7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{E490AD15-E5FD-4959-A10A-FFF5DD6515A7}"
+	ProjectSection(SolutionItems) = preProject
+		Documents\Informa.AlcoTransport - Administrator Guide.doc = Documents\Informa.AlcoTransport - Administrator Guide.doc
+		Documents\Informa.AlcoTransport - User Guide.doc = Documents\Informa.AlcoTransport - User Guide.doc
+		Documents\version_history.txt = Documents\version_history.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "log4net", "log4net", "{BE43222E-8139-46B5-BD38-52643E653F21}"
+	ProjectSection(SolutionItems) = preProject
+		Libraries\log4net\log4net.dll = Libraries\log4net\log4net.dll
+		Libraries\log4net\log4net.xml = Libraries\log4net\log4net.xml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxiomAlcoTransportWatchtower", "AxiomAlcoTransport\AxiomAlcoTransportWatchtower\AxiomAlcoTransportWatchtower.csproj", "{62887FEA-2EA2-4D37-BFBA-028D0A3BB56C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxiomAlcoTransportLicence", "AxiomAlcoTransport\AxiomAlcoTransportLicence\AxiomAlcoTransportLicence.csproj", "{1E7CEE77-82AE-4048-8BC4-17DABEA0C56B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxiomAlcoTransportTest", "Tests\AxiomAlcoTransportTest\AxiomAlcoTransportTest.csproj", "{EDF2CCA5-D1FA-4AD8-B3F4-934E0AFC17D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{02F54B75-9C70-4D21-B7C9-C292FF482BA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AxiomAlcoTransportUtility", "Utilities\AxiomAlcoTransportUtility\AxiomAlcoTransportUtility.csproj", "{147D128D-3E2F-4ADF-B003-B301362A8CDC}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{2F05F4CA-9097-40F7-9E04-745F4426D9B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtmTestServer", "UtmTestServer\UtmTestServer.csproj", "{2041FFE0-FE64-4597-AF13-516DD3F668FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+		Description = Solution "In Vino Veritas"
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A83D924-8C82-430D-AB7A-8C1831FFB5D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A83D924-8C82-430D-AB7A-8C1831FFB5D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A83D924-8C82-430D-AB7A-8C1831FFB5D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A83D924-8C82-430D-AB7A-8C1831FFB5D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{321B8717-AF61-407F-A283-4046A363D458}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{321B8717-AF61-407F-A283-4046A363D458}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{321B8717-AF61-407F-A283-4046A363D458}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{321B8717-AF61-407F-A283-4046A363D458}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F13FC0DE-C743-4A26-809D-27EE4F7464AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F13FC0DE-C743-4A26-809D-27EE4F7464AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F13FC0DE-C743-4A26-809D-27EE4F7464AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F13FC0DE-C743-4A26-809D-27EE4F7464AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62887FEA-2EA2-4D37-BFBA-028D0A3BB56C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62887FEA-2EA2-4D37-BFBA-028D0A3BB56C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62887FEA-2EA2-4D37-BFBA-028D0A3BB56C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62887FEA-2EA2-4D37-BFBA-028D0A3BB56C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E7CEE77-82AE-4048-8BC4-17DABEA0C56B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E7CEE77-82AE-4048-8BC4-17DABEA0C56B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E7CEE77-82AE-4048-8BC4-17DABEA0C56B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E7CEE77-82AE-4048-8BC4-17DABEA0C56B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDF2CCA5-D1FA-4AD8-B3F4-934E0AFC17D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF2CCA5-D1FA-4AD8-B3F4-934E0AFC17D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF2CCA5-D1FA-4AD8-B3F4-934E0AFC17D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF2CCA5-D1FA-4AD8-B3F4-934E0AFC17D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147D128D-3E2F-4ADF-B003-B301362A8CDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147D128D-3E2F-4ADF-B003-B301362A8CDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147D128D-3E2F-4ADF-B003-B301362A8CDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147D128D-3E2F-4ADF-B003-B301362A8CDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F05F4CA-9097-40F7-9E04-745F4426D9B8}.Debug|Any CPU.ActiveCfg = Debug
+		{2F05F4CA-9097-40F7-9E04-745F4426D9B8}.Release|Any CPU.ActiveCfg = Release
+		{2041FFE0-FE64-4597-AF13-516DD3F668FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2041FFE0-FE64-4597-AF13-516DD3F668FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2041FFE0-FE64-4597-AF13-516DD3F668FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2041FFE0-FE64-4597-AF13-516DD3F668FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9A83D924-8C82-430D-AB7A-8C1831FFB5D5} = {49F21A6A-8B52-43A0-B5A4-8AAA9EB908ED}
+		{321B8717-AF61-407F-A283-4046A363D458} = {A98BACA1-F31E-4ACA-BF0F-847B22BCED48}
+		{F13FC0DE-C743-4A26-809D-27EE4F7464AB} = {A98BACA1-F31E-4ACA-BF0F-847B22BCED48}
+		{BE43222E-8139-46B5-BD38-52643E653F21} = {D9A6BC2C-1EC7-4EF5-983A-1A8258BDAB7D}
+		{62887FEA-2EA2-4D37-BFBA-028D0A3BB56C} = {A98BACA1-F31E-4ACA-BF0F-847B22BCED48}
+		{1E7CEE77-82AE-4048-8BC4-17DABEA0C56B} = {A98BACA1-F31E-4ACA-BF0F-847B22BCED48}
+		{EDF2CCA5-D1FA-4AD8-B3F4-934E0AFC17D0} = {B0514D67-13AF-4F04-8058-A1380361CE02}
+		{147D128D-3E2F-4ADF-B003-B301362A8CDC} = {02F54B75-9C70-4D21-B7C9-C292FF482BA3}
+		{2F05F4CA-9097-40F7-9E04-745F4426D9B8} = {02F54B75-9C70-4D21-B7C9-C292FF482BA3}
+		{2041FFE0-FE64-4597-AF13-516DD3F668FF} = {B0514D67-13AF-4F04-8058-A1380361CE02}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E219CD8-4529-446E-B3EA-9CD23EA06E0B}
+	EndGlobalSection
+EndGlobal
